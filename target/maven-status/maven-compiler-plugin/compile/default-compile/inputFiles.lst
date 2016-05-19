@@ -1,0 +1,12 @@
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/dao/impl/TypeDAOImpl.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/tables/Category.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/tables/Pokemon.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/tables/Region.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/tables/RegionalPokedex.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/tables/Type.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/dao/RegionDAO.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/dao/impl/RegionDAOImpl.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/dao/TypeDAO.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/dao/impl/PokemonDAOImpl.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/dao/PokemonDAO.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/controller/StartupController.java

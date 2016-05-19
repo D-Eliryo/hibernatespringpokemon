@@ -1,0 +1,12 @@
+it/eliryo/hibernatespring/pokemon/controller/StartupController.class
+it/eliryo/hibernatespring/pokemon/tables/Pokemon.class
+it/eliryo/hibernatespring/pokemon/tables/Region.class
+it/eliryo/hibernatespring/pokemon/tables/Type.class
+it/eliryo/hibernatespring/pokemon/dao/TypeDAO.class
+it/eliryo/hibernatespring/pokemon/tables/Category.class
+it/eliryo/hibernatespring/pokemon/dao/PokemonDAO.class
+it/eliryo/hibernatespring/pokemon/dao/impl/PokemonDAOImpl.class
+it/eliryo/hibernatespring/pokemon/dao/RegionDAO.class
+it/eliryo/hibernatespring/pokemon/tables/RegionalPokedex.class
+it/eliryo/hibernatespring/pokemon/dao/impl/RegionDAOImpl.class
+it/eliryo/hibernatespring/pokemon/dao/impl/TypeDAOImpl.class

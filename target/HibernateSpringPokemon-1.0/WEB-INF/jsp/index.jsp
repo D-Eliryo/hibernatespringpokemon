@@ -9,6 +9,6 @@
         <title>My pokedex version</title>
     </head>
     <body>
-        <h2 id="h-1">This is Spart-No, joking, this is my version of Pokédex!!</h2>
+        <h2 id="h-1">This is Spart-No, joking, this is my version of Pokédex! Enjoy!</h2>
     </body>
 </html>

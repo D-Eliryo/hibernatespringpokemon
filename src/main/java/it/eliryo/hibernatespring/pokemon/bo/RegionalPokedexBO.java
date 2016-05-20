@@ -16,7 +16,7 @@ public interface RegionalPokedexBO {
     
     public void delete(RegionalPokedex regionalPokedex) throws Exception;
     
-    public void deleteByName(int posRegPokedex) throws Exception;
+    public void deleteByPos(int posRegPokedex) throws Exception;
     
     public void update(RegionalPokedex regionalPokedex) throws Exception;
     

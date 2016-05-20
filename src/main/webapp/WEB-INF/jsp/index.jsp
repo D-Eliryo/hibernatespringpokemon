@@ -6,9 +6,46 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
     <head>
+        <link rel="stylesheet" href="<c:url value="/resources/css/main.css"/>"/>
         <title>My pokedex version</title>
     </head>
     <body>
-        <h2 id="h-1">This is Spart-No, joking, this is my version of Pokédex! Enjoy!</h2>
+        <div class="myHeader" id="">
+            <div class="up-left">
+                <a id="a_container" href="${pageContext.request.contextPath}/">
+                    <img id="logoimg" src="<c:url value="/resources/images/Pokemon_Logo.png"/>"/>
+                </a>
+            </div>
+            <div class="up-center">
+                <h2 id="text">This is my version of Pokédex!!</h2>
+            </div>
+        </div>
+        <div class="left-column">
+            <ul id="">
+                <li>
+                    <a class="goto" href="${pageContext.request.contextPath}/Type">
+                        Look at the Types
+                    </a>
+                </li>
+                <li>
+                    <a class="goto" href="${pageContext.request.contextPath}/Pategory">
+                        Look at the Categories
+                    </a>
+                </li>
+                <li>
+                    <a class="goto" href="${pageContext.request.contextPath}/Pegion">
+                        Look at the Regions
+                    </a>
+                </li>
+                <li>
+                    <a class="goto" href="${pageContext.request.contextPath}/Pokemon">
+                        Look at the Pokemons
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="myMain">
+            <h2>Something will happens here. Work in progress</h2>
+        </div>
     </body>
 </html>

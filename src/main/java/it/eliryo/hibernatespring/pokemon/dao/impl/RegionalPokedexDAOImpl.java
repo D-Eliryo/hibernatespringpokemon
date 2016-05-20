@@ -32,7 +32,7 @@ public class RegionalPokedexDAOImpl implements RegionalPokedexDAO {
     }
 
     @Override
-    public void deleteByName(int posRegPokedex) throws Exception {
+    public void deleteByPos(int posRegPokedex) throws Exception {
         RegionalPokedex regionalPokedex = (RegionalPokedex) sessionFactory.getCurrentSession().get(RegionalPokedex.class, posRegPokedex);
         sessionFactory.getCurrentSession().delete(regionalPokedex);
     }

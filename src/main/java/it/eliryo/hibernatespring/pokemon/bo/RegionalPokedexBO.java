@@ -1,4 +1,4 @@
-package it.eliryo.hibernatespring.pokemon.dao;
+package it.eliryo.hibernatespring.pokemon.bo;
 
 import it.eliryo.hibernatespring.pokemon.tables.Pokemon;
 import it.eliryo.hibernatespring.pokemon.tables.Region;
@@ -9,13 +9,14 @@ import java.util.List;
  *
  * @author dario
  */
-public interface RegionalPokedexDAO {
+public interface RegionalPokedexBO {
+
     
     public void save(RegionalPokedex regionalPokedex) throws Exception;
     
     public void delete(RegionalPokedex regionalPokedex) throws Exception;
     
-    public void deleteByPos(int posRegPokedex) throws Exception;
+    public void deleteByName(int posRegPokedex) throws Exception;
     
     public void update(RegionalPokedex regionalPokedex) throws Exception;
     
@@ -28,5 +29,7 @@ public interface RegionalPokedexDAO {
     public List<Pokemon> findByRegion(Region region) throws Exception;
     
     public List<Region> findByPokemon(Pokemon pokemon) throws Exception;
+    
+
     
 }

@@ -28,12 +28,12 @@
                     </a>
                 </li>
                 <li>
-                    <a class="goto" href="${pageContext.request.contextPath}/Pategory">
+                    <a class="goto" href="${pageContext.request.contextPath}/Category">
                         Look at the Categories
                     </a>
                 </li>
                 <li>
-                    <a class="goto" href="${pageContext.request.contextPath}/Pegion">
+                    <a class="goto" href="${pageContext.request.contextPath}/Region">
                         Look at the Regions
                     </a>
                 </li>
@@ -45,7 +45,26 @@
             </ul>
         </div>
         <div class="myMain">
-            <h2>Something will happens here. Work in progress</h2>
+            <c:choose>
+                <c:when test="${sendMe==0}">
+                    <h2>Something will happens here. Work in progress</h2>
+                </c:when>
+                <c:when test="${sendMe==1}">
+                    <%@include file="type.jsp" %>
+                </c:when>
+                <c:when test="${sendMe==2}">
+                    <%@include file="category.jsp" %>
+                </c:when>
+                <c:when test="${sendMe==3}">
+                    <%@include file="region.jsp" %>
+                </c:when>
+                <c:when test="${sendMe==4}">
+                    <%@include file="pokemon.jsp" %>
+                </c:when>
+                <c:when test="${sendMe==5}">
+                    <%@include file="regionalPokedex.jsp" %>
+                </c:when>
+            </c:choose>
         </div>
     </body>
 </html>

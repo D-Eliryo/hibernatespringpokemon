@@ -4,6 +4,7 @@ import it.eliryo.hibernatespring.pokemon.bo.CategoryBO;
 import it.eliryo.hibernatespring.pokemon.dao.CategoryDAO;
 import it.eliryo.hibernatespring.pokemon.tables.Category;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CategoryBOImpl implements CategoryBO {
 
+    @Autowired
     private CategoryDAO categoryDao;
     
     @Override

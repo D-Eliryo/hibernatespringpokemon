@@ -6,6 +6,7 @@ import it.eliryo.hibernatespring.pokemon.tables.Pokemon;
 import it.eliryo.hibernatespring.pokemon.tables.Region;
 import it.eliryo.hibernatespring.pokemon.tables.RegionalPokedex;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class RegionalPokedexBOImpl implements RegionalPokedexBO {
 
+    @Autowired
     private RegionalPokedexDAO regionalPokedexDao;
     
     @Override

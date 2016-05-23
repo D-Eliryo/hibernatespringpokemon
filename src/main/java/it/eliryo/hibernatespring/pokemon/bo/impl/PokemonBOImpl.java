@@ -4,6 +4,7 @@ import it.eliryo.hibernatespring.pokemon.bo.PokemonBO;
 import it.eliryo.hibernatespring.pokemon.dao.PokemonDAO;
 import it.eliryo.hibernatespring.pokemon.tables.Pokemon;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,7 +15,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class PokemonBOImpl implements PokemonBO
 {
-
+    
+    @Autowired
     private PokemonDAO pokemonDao;
     
     @Override

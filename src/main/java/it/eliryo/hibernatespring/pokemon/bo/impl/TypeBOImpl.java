@@ -4,6 +4,7 @@ import it.eliryo.hibernatespring.pokemon.bo.TypeBO;
 import it.eliryo.hibernatespring.pokemon.dao.TypeDAO;
 import it.eliryo.hibernatespring.pokemon.tables.Type;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,6 +17,7 @@ public class TypeBOImpl implements TypeBO {
 
 //-------------------OGGETTO DELL'INTERFACCIA DAO-----------------------------//    
     
+    @Autowired
     private TypeDAO typeDao;
     
     @Override

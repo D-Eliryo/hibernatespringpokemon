@@ -48,6 +48,46 @@
     
     
     <!-- DAO AND BO CUSTOM BEANS REFFERED TO IMPLEMENTED CLASSES -->
+    <bean id="categoryDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.CategoryDAOImpl">
+        
+    </bean>
     
+    <bean id="pokemonDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.PokemonDAOImpl">
+        
+    </bean>
+    
+    <bean id="regionDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.RegionDAOImpl">
+        
+    </bean>
+
+    <bean id="regionalPokedexDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.RegionalPokedexDAOImpl">
+        
+    </bean>
+    
+    <bean id="typeDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.TypeDAOImpl">
+        
+    </bean>
+    
+    <!-- /////////////////////////////////////////////////////////////////// -->
+    
+    <bean id="categoryBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.CategoryBOImpl">
+        
+    </bean>
+    
+    <bean id="pokemonBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.PokemonBOImpl">
+        
+    </bean>
+    
+    <bean id="regionBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.RegionBOImpl">
+        
+    </bean>
+    
+    <bean id="regionalPokedexBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.RegionalPokedexBOImpl">
+        
+    </bean>
+    
+    <bean id="typeBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.TypeBOImpl">
+        
+    </bean>
     
 </beans>

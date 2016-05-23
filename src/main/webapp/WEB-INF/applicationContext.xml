@@ -49,43 +49,45 @@
     
     <!-- DAO AND BO CUSTOM BEANS REFFERED TO IMPLEMENTED CLASSES -->
     <bean id="categoryDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.CategoryDAOImpl">
-        <property name="sessionFactory" ref="sessionFactory" />
+        
     </bean>
     
     <bean id="pokemonDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.PokemonDAOImpl">
-        <property name="sessionFactory" ref="sessionFactory" />
+        
     </bean>
     
     <bean id="regionDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.RegionDAOImpl">
-        <property name="sessionFactory" ref="sessionFactory" />
+        
     </bean>
 
     <bean id="regionalPokedexDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.RegionalPokedexDAOImpl">
-        <property name="sessionFactory" ref="sessionFactory" />
+        
     </bean>
     
     <bean id="typeDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.TypeDAOImpl">
-        <property name="sessionFactory" ref="sessionFactory" />
+        
     </bean>
     
+    <!-- /////////////////////////////////////////////////////////////////// -->
+    
     <bean id="categoryBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.CategoryBOImpl">
-        <property name="categoryDao" ref="categoryDao" />
+        
     </bean>
     
     <bean id="pokemonBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.PokemonBOImpl">
-        <property name="pokemonDao" ref="pokemonDao" />
+        
     </bean>
     
     <bean id="regionBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.RegionBOImpl">
-        <property name="regionDao" ref="regionDao" />
+        
     </bean>
     
     <bean id="regionalPokedexBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.RegionalPokedexBOImpl">
-        <property name="regionalPokedexDao" ref="regionalPokedexDao" />
+        
     </bean>
     
     <bean id="typeBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.TypeBOImpl">
-        <property name="typeDao" ref="typeDao" />
+        
     </bean>
     
 </beans>

@@ -47,7 +47,7 @@
           p:location="/WEB-INF/jdbc.properties"/>
     
     
-    <!-- DAO AND BO CUSTOM BEANS REFFERED TO IMPLEMENTED CLASSES -->
+    <!-- DAO CUSTOM BEANS REFFERED TO IMPLEMENTED CLASSES -->
     <bean id="categoryDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.CategoryDAOImpl">
         
     </bean>
@@ -68,7 +68,7 @@
         
     </bean>
     
-    <!-- /////////////////////////////////////////////////////////////////// -->
+    <!-- BO CUSTOM BEANS REFFERED TO IMPLEMENTED CLASSES -->
     
     <bean id="categoryBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.CategoryBOImpl">
         

@@ -11,6 +11,7 @@ it/eliryo/hibernatespring/pokemon/dao/impl/RegionalPokedexDAOImpl.class
 it/eliryo/hibernatespring/pokemon/bo/TypeBO.class
 it/eliryo/hibernatespring/pokemon/bo/PokemonBO.class
 it/eliryo/hibernatespring/pokemon/dao/RegionalPokedexDAO.class
+it/eliryo/hibernatespring/pokemon/controller/TypeController.class
 it/eliryo/hibernatespring/pokemon/tables/RegionalPokedex.class
 it/eliryo/hibernatespring/pokemon/tables/Pokemon.class
 it/eliryo/hibernatespring/pokemon/bo/impl/RegionBOImpl.class

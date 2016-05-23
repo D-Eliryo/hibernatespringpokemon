@@ -2,11 +2,14 @@ package it.eliryo.hibernatespring.pokemon.bo;
 
 import it.eliryo.hibernatespring.pokemon.tables.Pokemon;
 import java.util.List;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author dario
  */
+
+@Transactional
 public interface PokemonBO {
     
     public void save(Pokemon pokemon) throws Exception;

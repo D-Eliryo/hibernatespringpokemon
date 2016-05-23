@@ -7,11 +7,14 @@ package it.eliryo.hibernatespring.pokemon.bo;
 
 import it.eliryo.hibernatespring.pokemon.tables.Region;
 import java.util.List;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author dario
  */
+
+@Transactional
 public interface RegionBO {
     
     public List<Region> findAllRegions() throws Exception;

@@ -13,6 +13,7 @@
 /home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/bo/PokemonBO.java
 /home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/dao/impl/RegionalPokedexDAOImpl.java
 /home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/bo/impl/PokemonBOImpl.java
+/home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/controller/TypeController.java
 /home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/dao/TypeDAO.java
 /home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/bo/RegionalPokedexBO.java
 /home/dario/NetBeansProjects/HibernateSpringPokemon/src/main/java/it/eliryo/hibernatespring/pokemon/dao/impl/TypeDAOImpl.java

@@ -4,11 +4,14 @@ import it.eliryo.hibernatespring.pokemon.tables.Pokemon;
 import it.eliryo.hibernatespring.pokemon.tables.Region;
 import it.eliryo.hibernatespring.pokemon.tables.RegionalPokedex;
 import java.util.List;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author dario
  */
+
+@Transactional
 public interface RegionalPokedexBO {
 
     

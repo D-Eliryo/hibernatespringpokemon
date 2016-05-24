@@ -7,12 +7,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
@@ -63,11 +61,8 @@ public class TypeController {
         System.out.println("type: "+type);
         List types;
         try{
-            System.out.println("Sono nel TRY");
             typeBO.save(type);
-            System.out.println("Provo a salvare nel db Type");
             types = typeBO.findAllTypes();
-            System.out.println("types gettati dal db: "+types);
             model.addAttribute("types", types);
             model.addAttribute("sendMe", 1);
             return "/index";
@@ -77,7 +72,38 @@ public class TypeController {
             System.err.println("Errore, something goes wrong");
             e.printStackTrace();
         }
+        try {
+            types = typeBO.findAllTypes();
+            model.addAttribute("types", types);
+        } catch (Exception ex) {
+            Logger.getLogger(TypeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
         model.addAttribute("sendMe", 1);
-        return "index";
+        return "/index";
     }
+        @RequestMapping("/delete")
+        public String delete(Model model, @RequestParam(value = "nomeT", required = true) String nomeT)
+        {
+            List types;
+            try
+            {
+                typeBO.delete(nomeT);
+                System.out.println("Provo a cancellare l'elemento: "+typeBO.findByName(nomeT));
+            } 
+            catch (Exception ex)
+            {
+                Logger.getLogger(TypeController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            try 
+            {
+                types = typeBO.findAllTypes();
+                model.addAttribute("types", types);
+            }
+            catch (Exception ex)
+            {
+                Logger.getLogger(TypeController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            model.addAttribute("sendMe", 1);
+            return "/index";
+        }
 }

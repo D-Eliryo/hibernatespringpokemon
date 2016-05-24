@@ -37,10 +37,16 @@
                 </font></h2></th>
             </tr>
             <c:forEach items="${types}" var="type">
-            <tr>
-                        <td>${type.nomeT}</td>
-            </tr>
-                </c:forEach>
+                <tr>
+                    <td>${type.nomeT}</td>
+                    <td>
+                        <form action="${pageContext.request.contextPath}/Type/delete" method="Post">
+                            <input type="hidden" value="${type.nomeT}" name="nomeT" />
+                            <input type="submit" value="Delete"/>
+                        </form>
+                    </td>
+                </tr>
+            </c:forEach>
         </table>
         </c:otherwise>
     </c:choose>

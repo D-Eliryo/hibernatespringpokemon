@@ -13,10 +13,12 @@ it/eliryo/hibernatespring/pokemon/bo/PokemonBO.class
 it/eliryo/hibernatespring/pokemon/dao/RegionalPokedexDAO.class
 it/eliryo/hibernatespring/pokemon/controller/TypeController.class
 it/eliryo/hibernatespring/pokemon/tables/RegionalPokedex.class
+it/eliryo/hibernatespring/pokemon/controller/CategoryController.class
 it/eliryo/hibernatespring/pokemon/tables/Pokemon.class
 it/eliryo/hibernatespring/pokemon/bo/impl/RegionBOImpl.class
 it/eliryo/hibernatespring/pokemon/tables/Region.class
 it/eliryo/hibernatespring/pokemon/tables/Type.class
+it/eliryo/hibernatespring/pokemon/controller/RegionalPokedexController.class
 it/eliryo/hibernatespring/pokemon/tables/Category.class
 it/eliryo/hibernatespring/pokemon/bo/impl/CategoryBOImpl.class
 it/eliryo/hibernatespring/pokemon/dao/PokemonDAO.class
@@ -25,3 +27,5 @@ it/eliryo/hibernatespring/pokemon/dao/impl/PokemonDAOImpl.class
 it/eliryo/hibernatespring/pokemon/dao/RegionDAO.class
 it/eliryo/hibernatespring/pokemon/dao/impl/CategoryDAOImpl.class
 it/eliryo/hibernatespring/pokemon/dao/impl/TypeDAOImpl.class
+it/eliryo/hibernatespring/pokemon/controller/RegionController.class
+it/eliryo/hibernatespring/pokemon/controller/PokemonController.class

@@ -3,6 +3,7 @@
     Created on : 17-mag-2016, 14.31.59
     Author     : dario
 --%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
     <head>
@@ -50,19 +51,19 @@
                     <h2>Something will happens here. Work in progress</h2>
                 </c:when>
                 <c:when test="${sendMe==1}">
-                    <%@include file="type.jsp" %>
+                    <%@include file="type/type.jsp" %>
                 </c:when>
                 <c:when test="${sendMe==2}">
-                    <%@include file="category.jsp" %>
+                    <%@include file="category/category.jsp" %>
                 </c:when>
                 <c:when test="${sendMe==3}">
-                    <%@include file="region.jsp" %>
+                    <%@include file="region/region.jsp" %>
                 </c:when>
                 <c:when test="${sendMe==4}">
-                    <%@include file="pokemon.jsp" %>
+                    <%@include file="pokemon/pokemon.jsp" %>
                 </c:when>
                 <c:when test="${sendMe==5}">
-                    <%@include file="regionalPokedex.jsp" %>
+                    <%@include file="regionalPokedex/regionalPokedex.jsp" %>
                 </c:when>
             </c:choose>
         </div>

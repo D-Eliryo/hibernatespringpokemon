@@ -3,17 +3,24 @@
     Author     : dario
 */
 
+*
+{
+    line-height: 0;
+}
 body
 {
+    line-height: 0;
     background-color: #a20d16;
+    /*width: 100%;*/
 }
 .myHeader
 {
-    border: solid #00cccc;
+    border-bottom: solid #333333;
+    border-top: solid #333333;
     left: 0;
     top: 0;
     width: 100%;
-    height: 75px;
+    height: 80px;
     position: fixed;    
     background-color: #666666;
 }
@@ -21,17 +28,14 @@ body
 {
     align-content: center;
     text-align: center;
-    border: solid yellow;
-    width: 75%;
-    height: 100%;
-    margin-left: 25%;
+    width: 85%;
+    margin-left: 15%;
 }
 .myHeader > .up-left
 {
     position: fixed;
     height: 75px;
-    width: 25%;
-    border: solid black;
+    width: 15%;
     text-align: center;
     align-content: center;
     align-items: center;
@@ -41,13 +45,10 @@ body
 .up-left > #a_container > #logoimg 
 {
     max-height: 75px;
-    max-width: 100%;
+/*    max-width: 100%;*/
     width: 100%;
-}
-#logoimg
-{
     cursor: pointer;
-    border: solid red;
+    /*border: solid red;*/
 }
 #text
 {
@@ -55,20 +56,20 @@ body
 }
 .myMain
 {
-    border: solid orange;
-    margin-top: 75px;
-    width: 75%;
+    /*border: solid orange;*/
+    margin-top: 110px;
+    width: 80%;
     left: 0;
-    height: 85%;
-    margin-left: 25%;
+    margin-left: 20%;
 }
 .left-column
 {
-    border: solid brown;
-    position: fixed;
+    /*margin-top: 10px;*/
+    /*background-image: url('../images/pokedex.png');*/
+    background-size: 100%;
+/*    position: fixed;*/
     left: 0;
-    width: 25%;
-    height: 85%;
+    width: 20%;
     float: left;
 }
 a
@@ -80,4 +81,9 @@ a
 ul
 {
     list-style-image: url('../images/Pokeball.ico');
+}
+li
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }

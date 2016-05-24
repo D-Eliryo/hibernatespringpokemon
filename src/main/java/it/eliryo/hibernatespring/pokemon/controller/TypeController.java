@@ -88,7 +88,6 @@ public class TypeController {
             try
             {
                 typeBO.delete(nomeT);
-                System.out.println("Provo a cancellare l'elemento: "+typeBO.findByName(nomeT));
             } 
             catch (Exception ex)
             {

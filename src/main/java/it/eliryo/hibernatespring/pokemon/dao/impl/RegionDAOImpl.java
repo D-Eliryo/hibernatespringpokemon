@@ -22,7 +22,7 @@ public class RegionDAOImpl implements RegionDAO{
     public List<Region> findAllRegions() throws Exception {
         Session session = sessionFactory.openSession();
         List<Region> regions=null;
-        session.createQuery("FROM Region");
+        regions = session.createQuery("FROM Region").list();
         return regions;
     }
 

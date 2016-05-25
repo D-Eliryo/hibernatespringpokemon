@@ -1,0 +1,89 @@
+/* 
+    Created on : 17-mag-2016, 14.34.08
+    Author     : dario
+*/
+
+*
+{
+    line-height: 0;
+}
+body
+{
+    line-height: 0;
+    background-color: #a20d16;
+    /*width: 100%;*/
+}
+.myHeader
+{
+    border-bottom: solid #333333;
+    border-top: solid #333333;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    position: fixed;    
+    background-color: #666666;
+}
+.myHeader > .up-center
+{
+    align-content: center;
+    text-align: center;
+    width: 85%;
+    margin-left: 15%;
+}
+.myHeader > .up-left
+{
+    position: fixed;
+    height: 75px;
+    width: 15%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    float: left;
+}
+
+.up-left > #a_container > #logoimg 
+{
+    max-height: 75px;
+/*    max-width: 100%;*/
+    width: 100%;
+    cursor: pointer;
+    /*border: solid red;*/
+}
+#text
+{
+    color: #ffff00;
+}
+.myMain
+{
+    /*border: solid orange;*/
+    margin-top: 110px;
+    width: 80%;
+    left: 0;
+    margin-left: 20%;
+}
+.left-column
+{
+    /*margin-top: 10px;*/
+    /*background-image: url('../images/pokedex.png');*/
+    background-size: 100%;
+/*    position: fixed;*/
+    left: 0;
+    width: 20%;
+    float: left;
+}
+a
+{
+    font-family: fantasy;
+    text-decoration: none;
+    color: #cccccc;
+}
+ul
+{
+    list-style-image: url('../images/Pokeball.ico');
+}
+li
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

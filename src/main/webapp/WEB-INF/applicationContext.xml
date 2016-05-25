@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+          http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+              
+    <context:component-scan base-package="it.eliryo.hibernatespring.pokemon" />
+    <mvc:annotation-driven/>
+    <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"/>
+    <tx:annotation-driven/>
+    
+    
+    <!-- SESSION FACTORY CREATA PER POTER GARANTIRE LE OPERAZIONI SUL DATABASE -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="it.eliryo.hibernatespring.pokemon.tables" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+    </bean>
+    
+    <!-- TRANSACTION MANAGER PER ABILITARE L'ANNOTATION @Transiactional -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+      <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <!-- DATA SOURCE CHE PERMETTE LA CONNESSIONE AL DB TRAMITE JDBC JAVA -->
+    <bean id="dataSource"
+            class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+            p:driverClassName="${jdbc.driverClassName}"
+            p:url="${jdbc.url}"
+            p:username="${jdbc.username}"
+            p:password="${jdbc.password}"/>
+   
+    <bean id="propertyConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+          p:location="/WEB-INF/jdbc.properties"/>
+    
+    
+    <!-- DAO CUSTOM BEANS REFFERED TO IMPLEMENTED CLASSES -->
+    <bean id="categoryDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.CategoryDAOImpl">
+        
+    </bean>
+    
+    <bean id="pokemonDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.PokemonDAOImpl">
+        
+    </bean>
+    
+    <bean id="regionDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.RegionDAOImpl">
+        
+    </bean>
+
+    <bean id="regionalPokedexDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.RegionalPokedexDAOImpl">
+        
+    </bean>
+    
+    <bean id="typeDao" class="it.eliryo.hibernatespring.pokemon.dao.impl.TypeDAOImpl">
+        
+    </bean>
+    
+    <!-- BO CUSTOM BEANS REFFERED TO IMPLEMENTED CLASSES -->
+    
+    <bean id="categoryBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.CategoryBOImpl">
+        
+    </bean>
+    
+    <bean id="pokemonBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.PokemonBOImpl">
+        
+    </bean>
+    
+    <bean id="regionBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.RegionBOImpl">
+        
+    </bean>
+    
+    <bean id="regionalPokedexBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.RegionalPokedexBOImpl">
+        
+    </bean>
+    
+    <bean id="typeBo" class="it.eliryo.hibernatespring.pokemon.bo.impl.TypeBOImpl">
+        
+    </bean>
+    
+</beans>
